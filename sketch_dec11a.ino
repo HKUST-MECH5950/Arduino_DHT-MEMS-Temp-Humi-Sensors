@@ -78,7 +78,7 @@ void loop() {
   delay(5000);  // wait for delay
 
   // Control the motor according to temperature
-  if (myTemp > 25) {
+  if (myTemp > 30) {
       digitalWrite(relay_pin, HIGH); // Turn on the motor
      // Rotate CCW at 10 RPM
 	    myStepper.setSpeed(10);
